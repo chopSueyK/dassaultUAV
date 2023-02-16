@@ -5,10 +5,10 @@ import re
 
 def gstreamer_pipeline(
     sensor_id=0,
-    capture_width=1920,
-    capture_height=1080,
-    display_width=960,
-    display_height=540,
+    capture_width=640,
+    capture_height=640,
+    display_width=640,
+    display_height=640,
     framerate=30,
     flip_method=0,
 ):
