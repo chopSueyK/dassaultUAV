@@ -5,8 +5,8 @@ import re
 
 def gstreamer_pipeline(
     sensor_id=0,
-    capture_width=640,
-    capture_height=640,
+    capture_width=320,
+    capture_height=320,
     display_width=640,
     display_height=640,
     framerate=30,
@@ -39,7 +39,7 @@ i = 0
 while True:
     check, frame = video.read()
     #frame = cv2.resize(frame, (640, 640))
-    result = model(frame, size = 640)
+    result = model(frame, size = 320)
     cv2.imshow('output', frame)
     x =result.tolist()[0]
     s = ""
